@@ -12,3 +12,4 @@ Webotron currently has the following features:
 
 - List buckets
 - List objects in a bucket
+- Setup Bucket for static website hosting on s3 including policy 'n' stuff
