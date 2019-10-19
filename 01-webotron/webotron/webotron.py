@@ -24,7 +24,7 @@ s3 = session.resource('s3')
 
 @click.group()
 def cli():
-    """Webotron deploys websites to AWS"""
+    """Webotron deploys websites to AWS."""
     pass
 
 
