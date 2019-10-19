@@ -1,8 +1,22 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+"""Webotron: Deploy websites with aws
+
+Webtrong automates the process of deploying static websites to aws
+- Configure AWS S3 buckets
+  - Create them
+  - Set them up for static website hosting
+  - Deploy local files to them
+- Configure DNS with AWS Route 52
+- Configure a CDN and SSL with AWS Cloudfront
+"""
+
 import boto3
 import click
+import mimetypes
 from botocore.exceptions import ClientError
 from pathlib import Path
-import mimetypes
 
 session = boto3.Session(profile_name="pythonAutomation")
 s3 = session.resource('s3')
@@ -74,6 +88,7 @@ def setup_bucket(bucket):
 
 
 def upload_file(s3_bucket, path, key):
+    """Upload path to s3_buckat at key."""
     content_type = mimetypes.guess_type(key)[0] or 'text/plain'
     s3_bucket.upload_file(path, key, ExtraArgs={'ContentType': content_type})
 
