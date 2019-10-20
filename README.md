@@ -14,3 +14,4 @@ Webotron currently has the following features:
 - List objects in a bucket
 - Setup Bucket for static website hosting on s3 including policy 'n' stuff
 - Sync directory tree to bucket
+- Set AWS profile with --profile=<profileName>
