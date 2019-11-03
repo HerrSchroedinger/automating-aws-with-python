@@ -15,3 +15,4 @@ Webotron currently has the following features:
 - Setup Bucket for static website hosting on s3 including policy 'n' stuff
 - Sync directory tree to bucket
 - Set AWS profile with --profile=<profileName>
+- Configure route 53 domain
