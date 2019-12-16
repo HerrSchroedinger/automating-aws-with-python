@@ -2,6 +2,6 @@
   "videolyzer": {
     "profile": "",
     "videos_bucket" : "",
-    "videostable": ""
+    "video_stable": ""
   }
 }
